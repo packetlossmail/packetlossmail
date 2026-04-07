@@ -141,6 +141,15 @@ a {
 
 .nav-links a:hover { color: var(--brand-primary); }
 
+.nav-signin {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: color 0.2s;
+}
+
+.nav-signin:hover { color: var(--brand-primary); }
+
 .mobile-menu-btn {
     display: none;
     flex-direction: column;
@@ -917,6 +926,7 @@ a {
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .nav .btn-sm { display: none; }
+    .nav-signin { display: none; }
     .mobile-menu-btn { display: flex; }
 
     .hero { padding: 120px 0 80px; }
