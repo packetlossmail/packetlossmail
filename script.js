@@ -62,7 +62,7 @@
     document.querySelectorAll('a[href^="#"]').forEach(function (link) {
         link.addEventListener('click', function (e) {
             var href = this.getAttribute('href');
-            if (href === '#') return;
+            if (href === '#') { e.preventDefault(); return; }
             var target = document.querySelector(href);
             if (target) {
                 e.preventDefault();
